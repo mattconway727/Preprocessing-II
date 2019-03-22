@@ -1,15 +1,15 @@
 // header
+header {
+  border-bottom: @dashed;
+  padding: 20px 0;
+}
 
 .header {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  border-bottom: @dashed;
-
-  h1 {
-    margin: @header-margin;
-  }
+  // padding: 20px;
 
   @media @mobile {
     flex-direction: column;
@@ -100,13 +100,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      padding: 20px 70px;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 } // home
 
 .btn {
   .btn;
+
+  @media @mobile {
+    width: 100%;
+  }
 }
